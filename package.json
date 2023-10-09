@@ -1,0 +1,37 @@
+{
+  "name": "learn-terraform-lambda-api-gateway",
+  "version": "1.0.0",
+  "description": "AWS Lambda functions and API gateway are often used to create serverless applications.",
+  "main": "index.js",
+  "scripts": {
+    "initial_deploy": "terraform apply -parallelism 1",
+    "build": "webpack",
+    "deploy": "terraform apply",
+    "destroy": "terraform destroy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hashicorp/learn-terraform-lambda-api-gateway.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hashicorp/learn-terraform-lambda-api-gateway/issues"
+  },
+  "homepage": "https://github.com/hashicorp/learn-terraform-lambda-api-gateway#readme",
+  "dependencies": {
+    "@aws-sdk/client-dynamodb": "^3.425.0",
+    "aws-crt": "^1.18.0",
+    "joi": "^17.11.0",
+    "jsonwebtoken": "^9.0.2",
+    "ts-loader": "^9.4.4",
+    "typescript": "^5.2.2",
+    "webpack": "^5.88.2"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.124",
+    "@types/jsonwebtoken": "^9.0.3",
+    "fork-ts-checker-webpack-plugin": "^9.0.0",
+    "webpack-cli": "^5.1.4"
+  }
+}
