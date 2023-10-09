@@ -24,9 +24,14 @@ Build the lambda functions
 yarn build
 ```
 
-Initial Deploy to aws (initially it is running with a parallelism of 1, later can be run with yarn deploy normally)
+Init terraform and initial deploy to aws
 ```sh
 yarn initial_deploy
+```
+
+Deploy in general
+```sh
+yarn deploy
 ```
 
 ### Manual Test
@@ -47,7 +52,6 @@ Result expected the token to be consider for the frontend
 ### TODOs
 
 - OpenAPI reference as a bonus.
-- Remove parallelism 1, and check terraform configurations.
 - Provide jest with supertest against a localstack instance exposed using docker.
 - Create a folder for realeases for .zip files.
 - Consider a terraform folder or something to have less files on the root level

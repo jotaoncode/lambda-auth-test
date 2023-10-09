@@ -4,7 +4,7 @@
   "description": "AWS Lambda functions and API gateway are often used to create serverless applications.",
   "main": "index.js",
   "scripts": {
-    "initial_deploy": "terraform apply -parallelism 1",
+    "initial_deploy": "terraform init && terraform apply -parallelism 1",
     "build": "webpack",
     "deploy": "terraform apply",
     "destroy": "terraform destroy"
