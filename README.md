@@ -36,6 +36,8 @@ yarn deploy
 
 ### Manual Test
 
+<RESOURCE_CREATED_GATEWAY_API> is exposed in the output of the run of terraform
+
 Signup the user:
 ```sh
 curl -X POST https://juan:qwerqwer@<RESOURCE_CREATED_GATEWAY_API>/signup
